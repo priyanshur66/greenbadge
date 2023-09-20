@@ -1,0 +1,25 @@
+.tile-text{
+    position: absolute;
+    width: 102%;
+    height: 101.5%;
+    top: -2px;
+    text-align: left;
+    display: none;
+    background-image: radial-gradient( farthest-corner at 40px 40px, #0000004f 0%, #000000de 100% );
+}
+.tile{
+    position: relative;
+}
+/* bg-gradient-to-t from-[#454545] to-transparent */
+.tile:hover .tile-text{
+opacity: 1;
+display: block;
+}
+.tile img:hover{
+    
+    opacity: 0.7 ;
+}
+.cjj{
+    margin-left: 25px;
+    margin-top: 50px;
+}

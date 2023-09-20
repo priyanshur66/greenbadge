@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+  font-family: 'Open Sans',sans-serif;
+  /*font-family: 'M PLUS 1p', sans-serif;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #00ffe0;
+background-image: linear-gradient(191deg, #00ffe0 0%, #019b64 33%, #197871 66%, #6ddbc7 100%);
+
+  /* background-image: url('./bg.png'); */
+  background-size: 200% 180%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: gradientTransform;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  src: local("NeueMachina"),
+   url("./fonts/NeueMachina/NeueMachina-Ultrabold.otf") format("opentype");
+  font-weight: bold;
+}
+/* ./assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf */

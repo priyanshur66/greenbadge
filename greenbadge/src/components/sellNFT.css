@@ -1,0 +1,27 @@
+.form-bg {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(255, 255, 255, 0.81);
+}
+.chh:placeholder-shown {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.81);
+}
+.chh::placeholder {
+  color: white;
+}
+.form-label{
+    color:rgb(168 85 247);
+}
+.dis{
+    resize: none;
+    height: 50px;
+}
+.chh:placeholder-shown::after,.chh:placeholder-shown::before {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.81);
+  }

@@ -1,0 +1,31 @@
+.nft-fl {
+  display: flex;
+  justify-content: center;
+  gap: -10PX;
+}
+.nft-tt {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  align-items: center;
+}
+.nft-fl img{
+    border: 2px solid white;
+    border-right:0px ;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.nft-tex{
+    border: 2px solid white;
+    border-left:0px ;
+    background: rgba(255, 255, 255, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  margin-left: -12px;
+  z-index: -1;
+}
+.nft-tex div{
+    margin-left: 30px;
+}
