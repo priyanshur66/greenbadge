@@ -86,24 +86,24 @@ export default function NFTPage(props) {
   return (
     <div style={{ "min-height": "100vh" }}>
       <Navbar></Navbar>
-      <div className="flex ml-20 mt-20">
+      <div className="flex ml-20 mt-20 mb-10">
         <img src={data.image} alt="" className="w-2/5 nft_img" />
         <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
-          <div>Name: {data.name}</div>
-          <div>Description: {data.description}</div>
+          <div>Name: <span className="text-l font-extrabold font-serif">{data.name}</span></div>
+          <div>Description: <span className="text-l font-extrabold font-serif">{data.description}</span></div>
           <div>
-            Price: <span className="">{data.price + " ETH"}</span>
+            Price: <span className="text-l font-extrabold font-serif">{data.price + " ETH"}</span>
           </div>
           <div>
-            Owner: <span className="text-l">{data.owner}</span>
+            Owner: <span className="text-l font-bold font-mono">{data.owner}</span>
           </div>
           <div>
-            Seller: <span className="text-l">{data.seller}</span>
+            Seller: <span className="text-l font-bold font-mono">{data.seller}</span>
           </div>
           <div>
             {currAddress != data.owner && currAddress != data.seller ? (
               <button
-                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm mt-28"
+                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-20 rounded-full text-l mt-24"
                 onClick={() => buyNFT(tokenId)}
               >
                 Own This Badge
