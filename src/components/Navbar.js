@@ -8,7 +8,7 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
 function Navbar() {
@@ -36,7 +36,6 @@ function Navbar() {
   async function connectWebsite() {
     const chainId = await window.ethereum.request({ method: "eth_chainId" });
     if (chainId !== "0x5") {
-      //alert('Incorrect network! Switch your metamask network to Rinkeby');
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
         params: [{ chainId: "0x5" }],
@@ -96,11 +95,11 @@ function Navbar() {
               )}
               {location.pathname === "/sellNFT" ? (
                 <li className="border-b-2 hover:pb-0 p-2">
-                  <Link to="/sellNFT">List My NFT</Link>
+                  <Link to="/sellNFT">List My Proposal</Link>
                 </li>
               ) : (
                 <li className="hover:border-b-2 hover:pb-0 p-2">
-                  <Link to="/sellNFT">List My NFT</Link>
+                  <Link to="/sellNFT">List My Proposal</Link>
                 </li>
               )}
               {location.pathname === "/profile" ? (
@@ -114,10 +113,10 @@ function Navbar() {
               )}
               <li>
                 <button
-                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-sm"
+                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-sm border"
                   onClick={connectWebsite}
                 >
-                  {connected ? "Connected" : "Connect Wallet"}
+                  {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
                 </button>
               </li>
             </ul>

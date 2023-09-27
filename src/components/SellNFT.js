@@ -116,18 +116,18 @@ export default function SellNFT () {
         <Navbar></Navbar>
         <div className="flex flex-col place-items-center mt-10" id="nftForm">
             <form className="form-bg shadow-md rounded px-8 pt-4 pb-8 mb-4">
-            <h3 className="text-center font-bold text-lg text-white mb-8">Upload your NFT to the marketplace</h3>
+            <h3 className="text-center font-bold text-lg text-white mb-8">Upload Your Proposal</h3>
                 <div className="mb-4">
-                    <label className="block text-white text-md font-bold mb-2" htmlFor="name">NFT Name</label>
-                    <input className="chh focus-bg" id="name" type="text" placeholder="choose your name " onChange={e => updateFormParams({...formParams, name: e.target.value})} value={formParams.name}></input>
+                    <label className="block text-white text-md font-bold mb-2" htmlFor="name">Title</label>
+                    <input className="chh focus-bg" id="name" type="text" placeholder="Proposal Title" onChange={e => updateFormParams({...formParams, name: e.target.value})} value={formParams.name}></input>
                 </div>
                 <div className="mb-6">
-                    <label className="block text-white text-md font-bold mb-2 dis" htmlFor="description">NFT Description</label>
+                    <label className="block text-white text-md font-bold mb-2 dis" htmlFor="description">Proposal Description</label>
                     <textarea className="chh dis" cols="40" rows="5" id="description" type="text" placeholder="Write your discription...." value={formParams.description} onChange={e => updateFormParams({...formParams, description: e.target.value})}></textarea>
                 </div>
                 <div className="mb-6">
                     <label className="block text-white text-md font-bold mb-2" htmlFor="price">Price (in ETH)</label>
-                    <input className="chh" type="number" placeholder="Min 0.01 ETH" step="0.01" value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})}></input>
+                    <input className="chh" type="number" placeholder="Min 0.001 ETH" step="0.001" value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})}></input>
                 </div>
                 <div>
                     <label className="block text-white text-md font-bold mb-2" htmlFor="image">Upload Image (&lt;500 KB)</label>
@@ -135,8 +135,8 @@ export default function SellNFT () {
                 </div>
                 <br></br>
                 <div className="text-red-500 text-center">{message}</div>
-                <button onClick={listNFT} className="font-bold mt-10 w-full bg-purple-500 text-white rounded p-2 shadow-lg" id="list-button">
-                    List NFT
+                <button onClick={listNFT} className="font-bold mt-10 w-full bg-green-500 text-white rounded-full p-2 shadow-lg" id="list-button">
+                    List Proposal
                 </button>
             </form>
         </div>

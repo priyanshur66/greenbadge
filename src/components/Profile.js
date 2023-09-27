@@ -22,7 +22,7 @@ export default function Profile () {
         //Pull the deployed contract instance
         let contract = new ethers.Contract(MarketplaceJSON.address, MarketplaceJSON.abi, signer)
 
-        //create an NFT Token
+        //create an NFT Token for proposal
         let transaction = await contract.getMyNFTs()
 
         /*
