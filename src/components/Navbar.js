@@ -25,7 +25,7 @@ function Navbar() {
 
   function updateButton() {
     const ethereumButton = document.querySelector(".enableEthereumButton");
-    ethereumButton.textContent = "did : 455k-455j-jh78";
+    ethereumButton.textContent = "lol";
     ethereumButton.classList.remove("hover:bg-blue-70");
     ethereumButton.classList.remove("bg-blue-500");
     ethereumButton.classList.add("hover:bg-green-70");
@@ -111,11 +111,13 @@ function Navbar() {
                 </li>
               )}
               <li>
-                <button
-                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border"
-                  onClick={connectWebsite}
-                >
-                  {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
+              <button
+                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border"
+                onClick={() => {
+                  window.location.href = "chrome-extension://kcigpjcafekokoclamfendmaapcljead/options.html";
+              }}
+>
+                {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
                 </button>
               </li>
             </ul>
