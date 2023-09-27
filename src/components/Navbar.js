@@ -25,7 +25,7 @@ function Navbar() {
 
   function updateButton() {
     const ethereumButton = document.querySelector(".enableEthereumButton");
-    ethereumButton.textContent = "Connected";
+    ethereumButton.textContent = "did : 455k-455j-jh78";
     ethereumButton.classList.remove("hover:bg-blue-70");
     ethereumButton.classList.remove("bg-blue-500");
     ethereumButton.classList.add("hover:bg-green-70");
@@ -67,7 +67,7 @@ function Navbar() {
 
   return (
     <div className="">
-      <nav className="w-screen">
+      <nav className="max-w-screen">
         <ul className="flex items-end justify-between py-3 bg-transparent text-white pr-5">
           <li className="flex items-end  pb-2" style={{marginLeft:'50px'}}>
             <Link to="/">
@@ -112,7 +112,7 @@ function Navbar() {
               )}
               <li>
                 <button
-                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-sm border"
+                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border"
                   onClick={connectWebsite}
                 >
                   {connected ? "did:455k-455j-jh78" : "Connect Wallet"}

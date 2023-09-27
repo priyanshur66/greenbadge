@@ -1,0 +1,34 @@
+/* Footer.css */
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 2rem 20px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .slogan{
+    font-size:1.3rem;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bolder;
+  }

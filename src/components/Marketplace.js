@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import NFTTile from "./NFTTile";
 import MarketplaceJSON from "../Marketplace.json";
@@ -68,6 +69,7 @@ export default function Marketplace() {
           })}
         </div>
       </div>
+       <Footer />
     </div>
   );
 }
