@@ -110,7 +110,7 @@ export default function NFTPage(props) {
               </button>
             ) : (
               <div className="text-emerald-700">
-                You are the owner of this NFT
+                You are the owner of this Badge
               </div>
             )}
 
