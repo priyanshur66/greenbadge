@@ -1,4 +1,3 @@
-import logo from "../logo_3.png";
 import fullLogo from "../logo6.7.png";
 import {
   BrowserRouter as Router,
