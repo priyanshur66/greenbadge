@@ -122,7 +122,7 @@ export default function SellNFT () {
                     <input className="chh focus-bg" id="name" type="text" placeholder="Proposal Title" onChange={e => updateFormParams({...formParams, name: e.target.value})} value={formParams.name}></input>
                 </div>
                 <div className="mb-6">
-                    <label className="block text-white text-md font-bold mb-2 dis" htmlFor="description">Proposal Description</label>
+                    <label className="block text-white text-md font-bold mb-0 dis" htmlFor="description">Proposal Description</label>
                     <textarea className="chh dis" cols="40" rows="5" id="description" type="text" placeholder="Write your discription...." value={formParams.description} onChange={e => updateFormParams({...formParams, description: e.target.value})}></textarea>
                 </div>
                 <div className="mb-6">

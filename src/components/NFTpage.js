@@ -95,18 +95,18 @@ export default function NFTPage(props) {
             Price: <span className="">{data.price + " ETH"}</span>
           </div>
           <div>
-            Owner: <span className="text-sm">{data.owner}</span>
+            Owner: <span className="text-l">{data.owner}</span>
           </div>
           <div>
-            Seller: <span className="text-sm">{data.seller}</span>
+            Seller: <span className="text-l">{data.seller}</span>
           </div>
           <div>
             {currAddress != data.owner && currAddress != data.seller ? (
               <button
-                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm"
+                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm mt-28"
                 onClick={() => buyNFT(tokenId)}
               >
-                Buy this NFT
+                Own This Badge
               </button>
             ) : (
               <div className="text-emerald-700">

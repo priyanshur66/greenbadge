@@ -9,7 +9,6 @@ import {
 } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-
 function Navbar() {
   const [connected, toggleConnect] = useState(false);
   const location = useLocation();
@@ -25,7 +24,7 @@ function Navbar() {
 
   function updateButton() {
     const ethereumButton = document.querySelector(".enableEthereumButton");
-    ethereumButton.textContent = "lol";
+    ethereumButton.textContent = "Connected";
     ethereumButton.classList.remove("hover:bg-blue-70");
     ethereumButton.classList.remove("bg-blue-500");
     ethereumButton.classList.add("hover:bg-green-70");
@@ -64,6 +63,7 @@ function Navbar() {
       window.location.replace(location.pathname);
     });
   });
+  
 
   return (
     <div className="">
@@ -111,12 +111,11 @@ function Navbar() {
                 </li>
               )}
               <li>
-              <button
-                className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border"
-                onClick={() => {
-                  window.location.href = "chrome-extension://kcigpjcafekokoclamfendmaapcljead/options.html";
-              }}
->
+
+                <button
+                  className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border"
+                  onClick={connectWebsite}
+                >
                 {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
                 </button>
               </li>

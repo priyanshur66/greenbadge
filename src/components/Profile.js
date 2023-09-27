@@ -65,9 +65,9 @@ export default function Profile () {
             <Navbar></Navbar>
             <div className="profileClass">
             <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
-                <div className="mb-5">
-                    <h2 className="font-bold">Wallet Address</h2>  
-                    {address}
+                <div className="mb-5 border  bg-white p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg">
+                    <h2 className="font-bold mb-2 text-black"> Your Wallet Address</h2>  
+                    " {address} "
                 </div>
             </div>
             <div className="flex flex-row text-center justify-center mt-10 md:text-2xl text-white">
@@ -81,7 +81,7 @@ export default function Profile () {
                     </div>
             </div>
             <div className="flex flex-col text-center items-center mt-11 text-white">
-                <h2 className="font-bold">Your Badges</h2>
+                <h2 className="font-bold text-3xl">Your Badges</h2>
                 <div className="flex justify-center flex-wrap max-w-screen-xl">
                     {data.map((value, index) => {
                     return <NFTTile data={value} key={index}></NFTTile>;

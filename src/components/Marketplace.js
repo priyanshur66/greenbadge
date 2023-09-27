@@ -62,7 +62,8 @@ export default function Marketplace() {
         <Land />
       </div>
       <div className="flex flex-col place-items-center mt-20">
-        <div className="md:text-xl font-bold text-white">New Badges</div>
+        <div className="md:text-3xl font-bold text-white mb-3">New Badges</div>
+        <div className="md:text-2xl font-bold text-white"> Click Them To Explore More ! </div>
         <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
           {data.map((value, index) => {
             return <NFTTile data={value} key={index}></NFTTile>;
