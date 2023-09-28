@@ -27,9 +27,8 @@
 
 # ⏭🤔 What's next
 
-- Immersive experiences:It's time we see and engage with the world differently. Right now, we experience augmented reality through games, but there's a lot to it more than entertainment.
-- Support multiple media options: Add support for media like 3d models, VR/AR based posts etc.
-- Encryption: Add additional encryption which allows only people who bought a particular asset of the user can access 
+- Our mission is to empower individuals for global impact. Through Badge-backed support for NGOs, we're forging a sustainable future. Join us to make a measurable difference in critical environmental and social causes.
+- Our Badges symbolize your commitment, unlocking benefits like cashback and loyalty rewards. As you support NGOs, you actively drive an eco-conscious global movement. Your actions have a real impact on shaping a better world.
 
 #   Challenges we ran into
 
