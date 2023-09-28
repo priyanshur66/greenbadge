@@ -65,9 +65,17 @@ export default function Profile () {
             <Navbar></Navbar>
             <div className="profileClass">
             <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
-                <div className="mb-5 border  bg-white p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg">
+                <div className="mb-2 border  bg-white p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg">
                     <h2 className="font-bold mb-2 text-black"> Your Wallet Address</h2>  
                     " {address} "
+                </div>
+                <div>
+                <button className="font-bold mt-10 w-1/5 bg-green-500 text-white rounded-full p-2 shadow-lg" id="list-button"
+                onClick={() => {
+                    window.open("https://playground.dataverse-os.com/", "_blank");
+                  }}>
+                    Send Proof of Badge
+                </button>
                 </div>
             </div>
             <div className="flex flex-row text-center justify-center mt-10 md:text-2xl text-white">
