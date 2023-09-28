@@ -19,7 +19,7 @@ function NFTTile(data) {
           className="w-72 h-80 rounded-lg object-cover"
           crossOrigin="anonymous"
         />
-        <div className="text-white w-full p-2 rounded-lg pt-5  tile-text">
+        <div className="text-white w-full p-2 rounded-lg pt-5 tile-text">
           <div className="cjj">
             <strong className="text-xl">{data.data.name}</strong>
             <p className="display-inline">{data.data.description}</p>
