@@ -65,9 +65,9 @@ export default function Profile () {
             <Navbar></Navbar>
             <div className="profileClass">
             <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
-                <div className="mb-2 border  bg-white p-5 rounded-full bg-opacity-60 backdrop-filter backdrop-blur-lg mr-2 ml-2">
+                <div className="mb-2 border  bg-black p-5 rounded-2xl bg-opacity-40 backdrop-filter backdrop-blur-lg mr-2 ml-2">
                     <h2 className="font-bold mb-2 text-black"> Your Wallet Address</h2>  
-                    " {address} "
+                    <p class>" {address} "</p>
                 </div>
                 <div>
                 <button className="font-bold mt-10 w-1/5 bg-green-500 text-white rounded-full p-2 hover:shadow-2xl" id="list-button"
@@ -80,11 +80,11 @@ export default function Profile () {
             </div>
             <div className="flex flex-row text-center justify-center mt-10 md:text-2xl text-white">
                     <div>
-                        <h2 className="font-bold">No. of Badges</h2>
+                        <h2 className="font-bold text-3xl">No. of Badges</h2>
                         {data.length}
                     </div>
                     <div className="ml-20">
-                        <h2 className="font-bold">Total Value</h2>
+                        <h2 className="font-bold text-3xl">Total Value</h2>
                         {totalPrice} ETH
                     </div>
             </div>

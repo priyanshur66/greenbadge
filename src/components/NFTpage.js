@@ -63,7 +63,7 @@ export default function NFTPage(props) {
         signer
       );
       const salePrice = ethers.utils.parseUnits(data.price, "ether");
-      updateMessage("Buying the NFT... Please Wait (Upto 5 mins)");
+      updateMessage("Buying the BADGE... Please Wait");
       //run the executeSale function
       let transaction = await contract.executeSale(tokenId, {
         value: salePrice,
