@@ -14,8 +14,8 @@ body {
   /*font-family: 'M PLUS 1p', sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
-background-image: linear-gradient(191deg, #00ffe0 0%, #019b64 33%, #197871 66%, #6ddbc7 100%);
+  background-color: rgb(134 239 172);
+background-image: green;
 
   /* background-image: url('./bg.png'); */
   background-size: 200% 180%;

@@ -114,7 +114,7 @@ export default function SellNFT () {
     return (
         <div className="">
         <Navbar></Navbar>
-        <div className="flex flex-col place-items-center mt-10" id="nftForm">
+        <div className="flex flex-col place-items-center mt-10 width-1/2" id="nftForm">
             <form className="form-bg shadow-md rounded px-8 pt-4 pb-8 mb-4">
             <h3 className="text-center font-bold text-lg text-white mb-8">Upload Your Proposal</h3>
                 <div className="mb-4">
@@ -135,7 +135,7 @@ export default function SellNFT () {
                 </div>
                 <br></br>
                 <div className="text-red-500 text-center">{message}</div>
-                <button onClick={listNFT} className="font-bold mt-10 w-full bg-green-500 text-white rounded-full p-2 shadow-lg" id="list-button">
+                <button onClick={listNFT} className="font-bold mt-10 w-full bg-green-700 text-white rounded-full p-2 shadow-lg" id="list-button">
                     List Proposal
                 </button>
             </form>
