@@ -4,3 +4,5 @@ module.exports = {
     autoprefixer: {},
   },
 }
+
+//tailwind postcss.config file
