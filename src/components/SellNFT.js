@@ -110,7 +110,7 @@ export default function SellNFT() {
       });
       await transaction.wait();
 
-      alert("Successfully listed your BADGE !");
+      alert("Successfully listed your NFTs!");
       enableButton();
       updateMessage("");
       updateFormParams({ name: "", description: "", price: "" });
@@ -120,36 +120,107 @@ export default function SellNFT() {
     }
   }
 
-    console.log("Working", process.env);
-    return (
-        <div className="">
-        <Navbar></Navbar>
-        <div className="flex flex-col place-items-center mt-10" id="nftForm">
-            <form className="form-bg shadow-md rounded px-8 pt-4 pb-8 mb-4">
-            <h3 className="text-center font-bold text-lg text-white mb-8">Upload Your Proposal</h3>
-                <div className="mb-4">
-                    <label className="block text-white text-md font-bold mb-2" htmlFor="name">Title</label>
-                    <input className="chh focus-bg" id="name" type="text" placeholder="Proposal Title" onChange={e => updateFormParams({...formParams, name: e.target.value})} value={formParams.name}></input>
-                </div>
-                <div className="mb-6">
-                    <label className="block text-white text-md font-bold mb-0 dis" htmlFor="description">Proposal Description</label>
-                    <textarea className="chh dis" cols="40" rows="5" id="description" type="text" placeholder="Write your discription...." value={formParams.description} onChange={e => updateFormParams({...formParams, description: e.target.value})}></textarea>
-                </div>
-                <div className="mb-6">
-                    <label className="block text-white text-md font-bold mb-2" htmlFor="price">Price (in ETH)</label>
-                    <input className="chh" type="number" placeholder="Min 0.001 ETH" step="0.001" value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})}></input>
-                </div>
-                <div>
-                    <label className="block text-white text-md font-bold mb-2" htmlFor="image">Upload Image (&lt;500 KB)</label>
-                    <input type={"file"} onChange={OnChangeFile}></input>
-                </div>
-                <br></br>
-                <div className="text-red-500 text-center">{message}</div>
-                <button onClick={listNFT} className="font-bold mt-10 w-full bg-green-500 text-white rounded-full p-2 shadow-lg" id="list-button">
-                    List Proposal
-                </button>
-            </form>
-        </div>
-        </div>
-    )
+  console.log("Working", process.env);
+  return (
+    <div className="">
+      <Navbar></Navbar>
+      <div>
+        <a
+          className="flex flex-col place-items-center mt-10"
+          href="https://www.waterlily.ai/"
+          target="blank"
+        >
+          <button
+            type="submit"
+            class=" h-auto rounded-full bg-white text-black py-3 px-6 "
+          >
+            <span class="text-teal-900 font-semibold">
+              Generate starter images here
+            </span>
+          </button>
+        </a>
+      </div>
+      <div className="flex flex-col place-items-center mt-10" id="nftForm">
+        <form className="form-bg shadow-md rounded px-8 pt-4 pb-8 mb-4">
+          <h3 className="text-center font-bold text-lg text-white mb-8">
+            Upload Your Proposal (Currently open to all)
+          </h3>
+          <div className="mb-4">
+            <label
+              className="block text-white text-md font-bold mb-2"
+              htmlFor="name"
+            >
+              Title
+            </label>
+            <input
+              className="chh focus-bg"
+              id="name"
+              type="text"
+              placeholder="Proposal Title"
+              onChange={(e) =>
+                updateFormParams({ ...formParams, name: e.target.value })
+              }
+              value={formParams.name}
+            ></input>
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-white text-md font-bold mb-0 dis"
+              htmlFor="description"
+            >
+              Proposal Description
+            </label>
+            <textarea
+              className="chh dis"
+              cols="40"
+              rows="5"
+              id="description"
+              type="text"
+              placeholder="Write your discription...."
+              value={formParams.description}
+              onChange={(e) =>
+                updateFormParams({ ...formParams, description: e.target.value })
+              }
+            ></textarea>
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-white text-md font-bold mb-2"
+              htmlFor="price"
+            >
+              Price (in ETH)
+            </label>
+            <input
+              className="chh"
+              type="number"
+              placeholder="Min 0.001 ETH"
+              step="0.001"
+              value={formParams.price}
+              onChange={(e) =>
+                updateFormParams({ ...formParams, price: e.target.value })
+              }
+            ></input>
+          </div>
+          <div>
+            <label
+              className="block text-white text-md font-bold mb-2"
+              htmlFor="image"
+            >
+              Upload Image (&lt;500 KB)
+            </label>
+            <input type={"file"} onChange={OnChangeFile}></input>
+          </div>
+          <br></br>
+          <div className="text-red-500 text-center">{message}</div>
+          <button
+            onClick={listNFT}
+            className="font-bold mt-10 w-full bg-green-500 text-white rounded-full p-2 shadow-lg"
+            id="list-button"
+          >
+            List Proposal
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
