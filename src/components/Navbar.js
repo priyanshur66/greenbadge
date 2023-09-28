@@ -33,10 +33,10 @@ function Navbar() {
 
   async function connectWebsite() {
     const chainId = await window.ethereum.request({ method: "eth_chainId" });
-    if (chainId !== "0x5") {
+    if (chainId !== "0x13881") {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x5" }],
+        params: [{ chainId: "0x13881" }],
       });
     }
     await window.ethereum
@@ -63,13 +63,12 @@ function Navbar() {
       window.location.replace(location.pathname);
     });
   });
-  
 
   return (
     <div className="">
       <nav className="max-w-screen">
         <ul className="flex items-end justify-between py-3 bg-transparent text-white pr-5">
-          <li className="flex items-end  pb-2" style={{marginLeft:'50px'}}>
+          <li className="flex items-end  pb-2" style={{ marginLeft: "50px" }}>
             <Link to="/">
               <img
                 src={fullLogo}
@@ -111,12 +110,11 @@ function Navbar() {
                 </li>
               )}
               <li>
-
                 <button
                   className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-5 rounded-full text-sm border-2"
                   onClick={connectWebsite}
                 >
-                {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
+                  {connected ? "did:455k-455j-jh78" : "Connect Wallet"}
                 </button>
               </li>
             </ul>
