@@ -133,7 +133,7 @@ export default function SellNFT() {
                 </div>
                 <div className="mb-6">
                     <label className="block text-white text-md font-bold mb-0 dis" htmlFor="description">Proposal Description</label>
-                    <textarea className="chh dis" cols="40" rows="5" id="description" type="text" placeholder="Write your description...." value={formParams.description} onChange={e => updateFormParams({...formParams, description: e.target.value})}></textarea>
+                    <textarea className="chh dis" cols="40" rows="5" id="description" type="text" placeholder="Write your discription...." value={formParams.description} onChange={e => updateFormParams({...formParams, description: e.target.value})}></textarea>
                 </div>
                 <div className="mb-6">
                     <label className="block text-white text-md font-bold mb-2" htmlFor="price">Price (in ETH)</label>
