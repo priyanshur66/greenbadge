@@ -3,7 +3,7 @@
 <b>Green Badge
 <br></b>
 </p>
-<blockquote align="center">Built on <span style="color: #8b0000;">🚀</span> at <a href="https://www.encode.club/open-data-hack">Open Data Hack</a>.</blockquote>
+<blockquote align="center">Built at <a href="https://www.encode.club/open-data-hack">Open Data Hack</a>. <span style="color: #8b0000;">🚀</span></blockquote>
 
 # 💡 **Problem Statement**
 
