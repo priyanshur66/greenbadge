@@ -23,33 +23,50 @@
 
 - [DataverseOS](https://dataverse-os.com) represents the future of personal computing, owned through your wallet. It functions as an Internet Data Operating System, simplifying user data management and facilitating the creation of independent data-focused decentralized applications (dApps).
 
+<br>
+
 - [Lilypad](https://www.waterlily.ai/) Lilypad is building the infrastructure for internet-scale trustless distributed compute networks for #web3 underpinned by the Bacalhau Project.
 
-## Resources
+## 🔗 Resources
 
 - **[Dataverse OS Docs](https://docs.dataverse-os.com/)** for guides and techinical comparisons.
 
 - **[DataVerse OS Tutorial](https://www.youtube.com/@dataverse4323)** for guides and technical talks.
 
 
-### Built With
+### 👷 Built With :
 
-* [![React][React.js]][React-url]
-* [![Solidity][soliditylang.org]][Solidity-url]
-* [![Tailwind CSS][tailwindcss.com]][Tailwind-url]
-* [![DataverseOs][dataverse-os.com]][Dataverse-url]
+* [React Js](https://react.dev/)
+
+<br>
+
+* [Tailwind CSS](https://tailwindcss.com/)
+
+<br>
+
+* [Solidity](https://soliditylang.org/)
+
+<br>
+
+* [Dataverse OS](https://docs.dataverse-os.com/) 
+  
+
 
 
 # ⏭🤔 What's next
 
 - Our mission is to empower individuals for global impact. Through Badge-backed support for NGOs, we're forging a sustainable future. Join us to make a measurable difference in critical environmental and social causes.
+
 <br>
+
 - Our Badges symbolize your commitment, unlocking benefits like cashback and loyalty rewards. As you support NGOs, you actively drive an eco-conscious global movement. Your actions have a real impact on shaping a better world.
 
 #   Challenges we ran into
 
 - Working with DataverseOS was challenging for us due to less number of resources available but we managed to work around with what we had..
+
 <br>
+
 - connecting to the dataverse wallet and validating it within the was challanging part for us.
 
 ### Installation
