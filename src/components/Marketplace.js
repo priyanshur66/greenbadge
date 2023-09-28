@@ -61,7 +61,8 @@ export default function Marketplace() {
       <div>
         <Land />
       </div>
-      <div className="flex flex-col place-items-center mt-20">
+      <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-700 border-2 flex justify-center p-2 font-extrabold rounded-1/2 rounded-tl-md rounded-br-md text-3xl mr-2 ml-2 hover:shadow-2xl cursor-pointer font-serif">" One Step Towards Sustainability "</div>
+      <div className="flex flex-col place-items-center mt-10">
         <div className="md:text-3xl font-bold text-white mb-3">New Badges</div>
         <div className="md:text-2xl font-bold text-white"> Click Them To Explore More ! </div>
         <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
@@ -71,6 +72,7 @@ export default function Marketplace() {
         </div>
       </div>
        <Footer />
+       
     </div>
   );
 }
